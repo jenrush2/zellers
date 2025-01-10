@@ -1,6 +1,6 @@
 #User inputs a date, gets back the day of the week it landed on.
 
-P = raw_input("Enter the month of the date you want to know about, such as March: ")
+P = input("Enter the month of the date you want to know about, such as March: ")
 B = input("Day: ")
 D = input("Enter the century. For example, enter 19 for 1989: ")
 C = input("Enter the year of the century. For example, enter 89 for 1989: ")
@@ -33,7 +33,7 @@ elif M == "december":
     A = 10
 else:
     print ("Error - you didn't follow directions when you entered your month. Please try again.")
-    A = raw_input("Enter the month of the date you want to know about, such as January: ")
+    A = input("Enter the month of the date you want to know about, such as January: ")
 
 
 if A == 11 or A == 12:
