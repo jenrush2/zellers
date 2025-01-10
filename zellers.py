@@ -1,9 +1,9 @@
 #User inputs a date, gets back the day of the week it landed on.
 
 P = input("Enter the month of the date you want to know about, such as March: ")
-B = input("Day: ")
-D = input("Enter the century. For example, enter 19 for 1989: ")
-C = input("Enter the year of the century. For example, enter 89 for 1989: ")
+B = int(input("Day: "))
+D = int(input("Enter the century. For example, enter 19 for 1989: "))
+C = int(input("Enter the year of the century. For example, enter 89 for 1989: "))
 
 M = P.lower()
 
@@ -40,9 +40,9 @@ if A == 11 or A == 12:
     C -= 1
 
 
-W = (13 * A - 1) / 5
-X = C / 4
-Y = D / 4
+W = (13 * A - 1) // 5
+X = C // 4
+Y = D // 4
 Z = W + X + Y + B + C - 2 * D
 R = Z % 7
 
@@ -52,18 +52,20 @@ if R < 0:
 
 
 if R == 0:
-    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Sunday.")
+    print(str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Sunday.")
 elif R == 1:
-    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Monday.")
+    print(str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Monday.")
 elif R == 2:
-    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Tuesday.")
+    print(str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Tuesday.")
 elif R == 3:
-    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Wednesday.")
+    print(str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Wednesday.")
 elif R == 4:
-    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Thursday.")
+    print(str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Thursday.")
 elif R == 5:
-    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Friday.")
+    print(str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Friday.")
 elif R == 6:
-    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Saturday.")
+    print(str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Saturday.")
+else:
+    print("There was an error. R was equal to " + str(R))
 
 
