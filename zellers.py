@@ -32,7 +32,7 @@ elif M == "november":
 elif M == "december":
     A = 10
 else:
-    print "Error - you didn't follow directions when you entered your month. Please try again."
+    print ("Error - you didn't follow directions when you entered your month. Please try again.")
     A = raw_input("Enter the month of the date you want to know about, such as January: ")
 
 
@@ -52,18 +52,18 @@ if R < 0:
 
 
 if R == 0:
-    print str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Sunday."
+    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Sunday.")
 elif R == 1:
-    print str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Monday."
+    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Monday.")
 elif R == 2:
-    print str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Tuesday."
+    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Tuesday.")
 elif R == 3:
-    print str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Wednesday."
+    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Wednesday.")
 elif R == 4:
-    print str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Thursday."
+    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Thursday.")
 elif R == 5:
-    print str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Friday."
+    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Friday.")
 elif R == 6:
-    print str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Saturday."
+    print (str(P) + " " + str(B) + ", " + str(D) + str(C) + " was on a Saturday.")
 
 
